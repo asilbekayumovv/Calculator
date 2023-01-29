@@ -108,6 +108,19 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         btn00 = findViewById(R.id.btn00)
     }
 
+    private fun loadSigns() {
+        addSign(btnDiv)
+        addSign(btnMin)
+        addSign(btnMul)
+        addSign(btnPlus)
+        addSign(btnPercent)
+
+        addDot()
+        addPercent()
+
+
+    }
+
     private fun loadNumbers() {
         btn0.setOnClickListener(this)
         btn1.setOnClickListener(this)
@@ -123,18 +136,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         btn00.setOnClickListener(this)
     }
 
-    private fun loadSigns() {
-        addSign(btnDiv)
-        addSign(btnMin)
-        addSign(btnMul)
-        addSign(btnPlus)
-        addSign(btnPercent)
 
-        addDot()
-        addPercent()
-
-
-    }
 
     @SuppressLint("SetTextI18n")
     private fun addDot() {
